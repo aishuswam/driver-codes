@@ -2,12 +2,11 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-  	// The main function reads the input in the required format.
-  	// Just complete the solve function below.
+  	
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter wr = new PrintWriter(System.out);
-        int T = Integer.parseInt(br.readLine().trim());
+        int i = Integer.parseInt(br.readLine().trim());
         for(int t_i = 0; t_i < T; t_i++)
         {
             String str = br.readLine();
@@ -19,9 +18,15 @@ public class Main {
     }
   
     static char solve(String s){
-      	// Your code goes here
-        // s is the given input string
-      
+      if(i%2==0||7==0)
+      {
+        System.out.println(i+"is divisible by either 3 or 7 but not both ");
+        
+      }
+      if(i%2==0&&7==0)
+      {
+        System.out.println(i+"is divisible by both 3 and 7");
+      }
         char result = ' ';
         return result;
     }
